@@ -4,7 +4,7 @@
 [![Language](https://img.shields.io/badge/swift-3.1-orange.svg)](https://developer.apple.com/swift)
 [![Language](https://img.shields.io/badge/swift-4-orange.svg)](https://developer.apple.com/swift)
 
-This project was implemented during a Practicum for the Research Divisions [Interactive Media Systems](https://www.ims.tuwien.ac.at/),  ([TU Wien] (www.tuwien.ac.at)) 
+This project was implemented during a Practicum for the Research Divisions [Interactive Media Systems](https://www.ims.tuwien.ac.at/),  ([TU Wien](www.tuwien.ac.at)) 
 
 An iOS App for  iPhones with Dual Cameras which streams Video and Depth Data to a server using Apple HLS format. 
 
