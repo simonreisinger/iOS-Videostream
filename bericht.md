@@ -79,7 +79,7 @@ Auf dem Hauptbildschirm der App stehen 4 Buttons zur Verfügung:
 
 Weiteres wird links oben der Streaming-Status und diverse Fehler bei der Übertragung angezeigt.
 
-<img src="images/screenshot.png" alt = "AppScreenshot" width="200"/> <img src="images/screenshot2.png" alt = "AppScreenshot2" width="200"/>
+<img src="screenshots/screenshot.png" alt = "AppScreenshot" width="200"/> <img src="images/screenshot2.png" alt = "AppScreenshot2" width="200"/>
 <br /><!--TODO delte this line-->
 <br /><!--TODO delte this line-->
 Einstellungen:
@@ -90,8 +90,8 @@ Einstellungen:
 
 Mittels "Take Photo" abgespeicherte Bilder können mit [iTunes][13] folgendermaßen gefunden werden:
 
-<img src="images/savedImage.jpg" alt = "AppScreenshot" width="400"/>
-<img src="images/savedImage2.jpg" alt = "AppScreenshot2" width="400"/>
+<img src="screenshots/savedImage.jpg" alt = "AppScreenshot" width="400"/>
+<img src="screenshots/savedImage2.jpg" alt = "AppScreenshot2" width="400"/>
 
 Die Bilder werden als 3 Dateien gespeichert:
 1) I[Zeitstempel]color.png: RGB-Bild in maximaler Auflösung
