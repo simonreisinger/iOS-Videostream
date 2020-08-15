@@ -333,7 +333,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIPickerVie
             self.allValuesAreValid = false
             self.errorLabel.text = "url is not valid"
             self.endpointUrlStringTextField.backgroundColor = .red
-            print(self.endpointUrlStringTextField.text?.count)
+            print(self.endpointUrlStringTextField.text?.count ?? "Text is nil")
         } else {
             self.endpointUrlStringTextField.backgroundColor = UIColor(white: 1, alpha: 0)
         }

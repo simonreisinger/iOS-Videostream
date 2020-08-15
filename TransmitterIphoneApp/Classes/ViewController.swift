@@ -861,8 +861,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                 updateStatusLable(newText: "failed")
             case .cancelled:
                 updateStatusLable(newText: "cancelled")
-                //default:
-                //    updateStatusLable(newText: "DEFAULT")
+            default:
+                updateStatusLable(newText: "DEFAULT")
             }
         }
     }
@@ -931,8 +931,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                     updateStatusLable(newText: "failed")
                 case .cancelled:
                     updateStatusLable(newText: "cancelled")
-                //default:
-                //    updateStatusLable(newText: "DEFAULT")
+                default:
+                    updateStatusLable(newText: "DEFAULT")
             }
 
         } else {
@@ -1181,19 +1181,15 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                 self.countFramesinStream = 0
                 self.countSecondsinStream = 0
                 
-                
-                
                 let queue = DispatchQueue.global(qos: .default)
                 queue.async {
                     
                     print("Writing Byte Data")
                     
-                    
                     var tsData = Data()
                     
                     var byteMetaData = [UInt8]()
                     byteMetaData.append(countFramesinStreamCurrent)
-                    
                     
                     let sendVideoAllXMillisecondes : UInt16 = UInt16(countSecondsinStreamCurrent * 1000.0)
                     let sendVideoAllXMillisecondesMSB : UInt8 = UInt8(sendVideoAllXMillisecondes / 256)
@@ -1201,27 +1197,18 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                     let sendVideoAllXMillisecondesLSB : UInt8 = UInt8(sendVideoAllXMillisecondes % 256)
                     byteMetaData.append(sendVideoAllXMillisecondesLSB)
                     
-                    
                     let wDataMetaData = Data(bytes: byteMetaData, count: byteMetaData.count * MemoryLayout<UInt8>.stride)
                     
                     tsData.append(wDataMetaData)
-                        
-                        
+
                     tsData.append(self.binaryDepthData[self.activeDepthBinaryStreamingIndex]) //try Data(contentsOf: saveFileURL!)
                     
-                    
-                    
-                    
-                    
                     let mediaType = self.capturePhoto ? "image" : "video"
-                    
                     
                     let cacheDirectoryURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).last as NSURL?
                     let saveFileURL = cacheDirectoryURL?.appendingPathComponent("\(mediaType)Depth\(self.currentIndexDepthBinary!).binaryDepth")
                     
-                    
-                    
-                    let start = DispatchTime.now()
+                    //let start = DispatchTime.now()
                     var zipFilePath : URL!
                     do {
                         try tsData.write(to: saveFileURL!)
@@ -1231,15 +1218,11 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                     catch {
                         print("Something went wrong")
                     }
-                    let end = DispatchTime.now()
+                    //let end = DispatchTime.now()
                     
-                    let nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds // <<<<< Difference in nano seconds (UInt64)
-                    let timeInterval = Double(nanoTime) / 1_000_000 // Technically could overflow for long running tests
-                    
+                    //let nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds // <<<<< Difference in nano seconds (UInt64)
+                    //let timeInterval = Double(nanoTime) / 1_000_000 // Technically could overflow for long running tests
                     //print("Time to save and zip: \(timeInterval) ms")
-                    
-                    
-                    
                     
                     let urlString = "\(self.endpointUrlString!)?filename=\(mediaType)Depth_\(self.currentIndexDepthBinary!).zip"
                     let request = NSMutableURLRequest(url: NSURL(string: urlString)! as URL)
@@ -1249,10 +1232,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                         
                         let zipData = try Data(contentsOf: zipFilePath)
                         
-                        
                         print("Stream this data")
                         
-                    
                         request.httpBody = zipData as Data
                         
                         //if nil != tsData {
@@ -1366,7 +1347,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                                     } else {
                                         print("No data")
                                     }
-                                    
                                     
                                     do {
                                         try FileManager.default.removeItem(at: tsFileUrl!)
@@ -1612,7 +1592,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         // Portrait effects matte gets generated only if AVFoundation detects a face.
         if #available(iOS 12.0, *) {
             if var portraitEffectsMatte = photo.portraitEffectsMatte {
-                if let orientation = photo.metadata[ String(kCGImagePropertyOrientation) ] as? UInt32 {
+                if (photo.metadata[ String(kCGImagePropertyOrientation) ] as? UInt32) != nil {
                 }
             }
         }
