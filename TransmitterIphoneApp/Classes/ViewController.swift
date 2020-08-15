@@ -324,7 +324,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                     print("f!")
                     print(f!)
 
-                    print(dict.value(forKey: "filterDepth") as? Bool! as Any)
+                    print(dict.value(forKey: "filterDepth") as? Bool? as Any)
                 }
             }
 
@@ -1294,13 +1294,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                         print("Reading error: \(error)")
                     }
                     
-                    
                     self.currentIndexDepthBinary = self.currentIndexDepthBinary + 1
                 }
                 
-                
-                
-
                 if avAssetWriterVideo[activeVideoStreamingIndex]!.status == .writing {
                     self.finishedWritingVideo = false
                     avAssetWriterVideoInput[activeVideoStreamingIndex]!.markAsFinished()
@@ -1390,11 +1386,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                 
             }
         }
-
         if(capturePhoto) {
             stopRecording()
         }
-
     }
 
     /**
