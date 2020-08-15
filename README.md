@@ -21,7 +21,7 @@ It streams color/depth data video/photo from an iPhone to a server where it is p
 * cmd+shift+k
 
 ## Desktop app
-* Webserver Installieren (Mamp: https://www.mamp.info/de/; XAMP: https://www.apachefriends.org/de/index.html) und für andere Geräte den Zugriff über das Netzwerk zu freigeben.
+* Webserver Installieren ([Mamp](https://www.mamp.info); [XAMP](https://www.apachefriends.org/de/index.html)) und für andere Geräte den Zugriff über das Netzwerk zu freigeben.
 * htdocs-Verzeichnis hintergrundvideos aus dem Properties ordner in einem Ordner ablegen. Die jeweeilige URL/den jeweiligen Pfad in der Desktop app und in der iPhone App korrigieren 
 * Desktop app (Main.cpp) starten (erst 1 Sekunde nach dem in der iPhone App auf "Start streaming" gedrückt wurde)
 
