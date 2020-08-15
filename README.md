@@ -54,7 +54,7 @@ It streams color/depth data video/photo from an iPhone to a server where it is p
 * [Mac OS](https://www.apple.com/macos) 10.13.x
 
 ## Acknowledgment
-This project was implemented during a Practicum for the Research Divisions [Interactive Media Systems](https://www.ims.tuwien.ac.at/), ([TU Wien] (www.tuwien.ac.at)) 
+This project was implemented during a Practicum for the Research Divisions [Interactive Media Systems](https://www.ims.tuwien.ac.at/), ([TU Wien](www.tuwien.ac.at)) 
 
 ## Authors
 * Michael Pointner
