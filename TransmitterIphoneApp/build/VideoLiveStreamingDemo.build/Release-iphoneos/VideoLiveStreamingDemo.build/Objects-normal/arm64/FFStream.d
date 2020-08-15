@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpegWrapper/FFmpegWrapper/FFStream.m \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpegWrapper/FFmpegWrapper/FFStream.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavformat/avformat.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavcodec/avcodec.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/samplefmt.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/avutil.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/common.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/attributes.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/version.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/macros.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/avconfig.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/mem.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/error.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/rational.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/mathematics.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/intfloat.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/log.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/pixfmt.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/old_pix_fmts.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/buffer.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/cpu.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/channel_layout.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/dict.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavutil/frame.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavcodec/version.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavcodec/old_codec_ids.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavformat/avio.h \
+  /Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/FFmpeg-iOS/include/libavformat/version.h

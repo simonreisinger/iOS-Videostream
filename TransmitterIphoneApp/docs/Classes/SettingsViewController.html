@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SettingsViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SettingsViewController" class="dashAnchor"></a>
+    <a title="SettingsViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (78% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SettingsViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DepthToGrayscaleConverter.html">DepthToGrayscaleConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DepthToGrayscaleConverter/DepthRenderParam.html">– DepthRenderParam</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SettingsViewController.html">SettingsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoMixer.html">VideoMixer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoMixer/MixerParameters.html">– MixerParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewController.html">ViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:22VideoLiveStreamingDemo24allocateOutputBufferPoolSo07CVPixelgH0CSg06outputgH0_So12CGColorSpaceCSg0j5ColorL0So19CMFormatDescriptionCSg0j6FormatO0tAL4with_Si0j8RetainedG9CountHinttF">allocateOutputBufferPool(with:outputRetainedBufferCountHint:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/FilterRenderer.html">FilterRenderer</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SettingsViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SettingsViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt">UITextFieldDelegate</span><span class="p">,</span> <span class="kt">UIPickerViewDataSource</span><span class="p">,</span> <span class="kt">UIPickerViewDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>The setting View Controller controls the storyboard. The user can change some settings</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Simon Reisinger
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/changeable%20setting%20values"></a>
+                <a name="//apple_ref/swift/Section/changeable setting values" class="dashAnchor"></a>
+                <a href="#/changeable%20setting%20values">
+                  <h3 class="section-name">changeable setting values</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo22SettingsViewControllerC17EndpointUrlStringSSvp"></a>
+                    <a name="//apple_ref/swift/Property/EndpointUrlString" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo22SettingsViewControllerC17EndpointUrlStringSSvp">EndpointUrlString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>getter and setter Methode for endpointUrlString</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">EndpointUrlString</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo22SettingsViewControllerC14SelectedOptionSivp"></a>
+                    <a name="//apple_ref/swift/Property/SelectedOption" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo22SettingsViewControllerC14SelectedOptionSivp">SelectedOption</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides setter and getter for the <strong>filter</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">SelectedOption</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo22SettingsViewControllerC11StreamWidthSivp"></a>
+                    <a name="//apple_ref/swift/Property/StreamWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo22SettingsViewControllerC11StreamWidthSivp">StreamWidth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides setter and getter for the <strong>streamWidth</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">StreamWidth</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo22SettingsViewControllerC12StreamHeightSivp"></a>
+                    <a name="//apple_ref/swift/Property/StreamHeight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo22SettingsViewControllerC12StreamHeightSivp">StreamHeight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides setter and getter for the <strong>streamHeight</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">StreamHeight</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo22SettingsViewControllerC0C9FrequencySdvp"></a>
+                    <a name="//apple_ref/swift/Property/StreamingFrequency" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo22SettingsViewControllerC0C9FrequencySdvp">StreamingFrequency</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides setter and getter for the <strong>streamingFrequency</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">StreamingFrequency</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/GUI"></a>
+                <a name="//apple_ref/swift/Section/GUI" class="dashAnchor"></a>
+                <a href="#/GUI">
+                  <h3 class="section-name">GUI</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called after the controller&#39;s view is loaded into memory.
+This method is called after the view controller has loaded its view hierarchy into memory. This method is called regardless of whether the view hierarchy was loaded from a nib file or created programmatically in the loadView() method. You usually override this method to perform additional initialization on views that were loaded from nib files.</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Simon Reisinger
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)didReceiveMemoryWarning"></a>
+                    <a name="//apple_ref/swift/Method/didReceiveMemoryWarning()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)didReceiveMemoryWarning">didReceiveMemoryWarning()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sent to the view controller when the app receives a memory warning.
+Your app never calls this method directly. Instead, this method is called when the system determines that the amount of available memory is low.
+You can override this method to release any additional memory used by your view controller. If you do, your implementation of this method must call the super implementation at some point.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">didReceiveMemoryWarning</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(py)shouldAutorotate"></a>
+                    <a name="//apple_ref/swift/Property/shouldAutorotate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(py)shouldAutorotate">shouldAutorotate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables Autorotate for this Storyboard</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">shouldAutorotate</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Triggered%20button%20actions"></a>
+                <a name="//apple_ref/swift/Section/Triggered button actions" class="dashAnchor"></a>
+                <a href="#/Triggered%20button%20actions">
+                  <h3 class="section-name">Triggered button actions</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)backButtonActionWithSender:"></a>
+                    <a name="//apple_ref/swift/Method/backButtonAction(sender:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)backButtonActionWithSender:">backButtonAction(sender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns to main storyboard without saving the changes</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">backButtonAction</span><span class="p">(</span><span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>interaction with button</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)saveButtonActionWithSender:"></a>
+                    <a name="//apple_ref/swift/Method/saveButtonAction(sender:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)saveButtonActionWithSender:">saveButtonAction(sender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saves the current settings and returns to the main storyboard</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Simon Reisinger
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">saveButtonAction</span><span class="p">(</span><span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo22SettingsViewControllerC21checkIfValuesAreValidyyF"></a>
+                    <a name="//apple_ref/swift/Method/checkIfValuesAreValid()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo22SettingsViewControllerC21checkIfValuesAreValidyyF">checkIfValuesAreValid()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks if the currently set values in the textfields/Data Picker are valied or not</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Simon Reisinger
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkIfValuesAreValid</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)prepareForSegue:sender:"></a>
+                    <a name="//apple_ref/swift/Method/prepare(for:sender:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)prepareForSegue:sender:">prepare(for:sender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the view controller that a segue is about to be performed.
+The default implementation of this method does nothing. Subclasses override this method and use it to configure the new view controller prior to it being displayed. The segue object contains information about the transition, including references to both view controllers that are involved.
+Because segues can be triggered from multiple sources, you can use the information in the segue and sender parameters to disambiguate between different logical paths in your app. For example, if the segue originated from a table view, the sender parameter would identify the table view cell that the user tapped. You could then use that information to set the data on the destination view controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">prepare</span><span class="p">(</span><span class="k">for</span> <span class="nv">segue</span><span class="p">:</span> <span class="kt">UIStoryboardSegue</span><span class="p">,</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>segue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The segue object containing information about the view controllers involved in the segue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/DataPicker"></a>
+                <a name="//apple_ref/swift/Section/DataPicker" class="dashAnchor"></a>
+                <a href="#/DataPicker">
+                  <h3 class="section-name">DataPicker</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)textFieldShouldReturn:"></a>
+                    <a name="//apple_ref/swift/Method/textFieldShouldReturn(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)textFieldShouldReturn:">textFieldShouldReturn(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Asks the delegate if the text field should process the pressing of the return button.
+The text field calls this method whenever the user taps the return button. You can use this method to implement any custom behavior when the button is tapped. For example, if you want to dismiss the keyboard when the user taps the return button, your implementation can call the resignFirstResponder() method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="kd">func</span> <span class="nf">textFieldShouldReturn</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>textField</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text field whose return button was pressed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if the text field should implement its default behavior for the return button; otherwise, false.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)numberOfComponentsInPickerView:"></a>
+                    <a name="//apple_ref/swift/Method/numberOfComponents(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)numberOfComponentsInPickerView:">numberOfComponents(in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called by the picker view when it needs the number of components.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="kd">func</span> <span class="nf">numberOfComponents</span><span class="p">(</span><span class="k">in</span> <span class="nv">pickerView</span><span class="p">:</span> <span class="kt">UIPickerView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pickerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The picker view requesting the data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The number of components (or “columns”) that the picker view should display.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)pickerView:numberOfRowsInComponent:"></a>
+                    <a name="//apple_ref/swift/Method/pickerView(_:numberOfRowsInComponent:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)pickerView:numberOfRowsInComponent:">pickerView(_:numberOfRowsInComponent:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called by the picker view when it needs the number of rows for a specified component.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="kd">func</span> <span class="nf">pickerView</span><span class="p">(</span><span class="n">_</span> <span class="nv">pickerView</span><span class="p">:</span> <span class="kt">UIPickerView</span><span class="p">,</span> <span class="n">numberOfRowsInComponent</span> <span class="nv">component</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pickerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The picker view requesting the data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>component</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A zero-indexed number identifying a component of pickerView. Components are numbered left-to-right.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The number of rows for the component.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)pickerView:titleForRow:forComponent:"></a>
+                    <a name="//apple_ref/swift/Method/pickerView(_:titleForRow:forComponent:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)SettingsViewController(im)pickerView:titleForRow:forComponent:">pickerView(_:titleForRow:forComponent:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called by the picker view when it needs the title to use for a given row in a given component.
+If you implement both this method and the pickerView(<em>:attributedTitleForRow:forComponent:) method, the picker view prefers the pickerView(</em>:attributedTitleForRow:forComponent:) method. However, if that method returns nil, the picker view falls back to using the string returned by this method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal</span> <span class="kd">func</span> <span class="nf">pickerView</span><span class="p">(</span><span class="n">_</span> <span class="nv">pickerView</span><span class="p">:</span> <span class="kt">UIPickerView</span><span class="p">,</span> <span class="n">titleForRow</span> <span class="nv">row</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">forComponent</span> <span class="nv">component</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pickerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An object representing the picker view requesting the data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>row</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A zero-indexed number identifying a row of component. Rows are numbered top-to-bottom.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>component</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A zero-indexed number identifying a component of pickerView. Components are numbered left-to-right.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The string to use as the title of the indicated component row.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-06-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

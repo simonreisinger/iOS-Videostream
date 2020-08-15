@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>endpointUrlString</key>
+	<string>http://192.168.0.29:8080/videos/input/put.php</string>
+	<key>filterDepth</key>
+	<true/>
+	<key>streamWidth</key>
+	<integer>240</integer>
+	<key>streamHeight</key>
+	<integer>320</integer>
+	<key>maxDisparity</key>
+	<integer>5</integer>
+	<key>minDisparity</key>
+	<integer>0</integer>
+	<key>interleavedDepthCoding</key>
+	<true/>
+	<key>streamingFrequency</key>
+	<integer>1</integer>
+	<key>saveVideoPNG</key>
+	<false/>
+</dict>
+</plist>

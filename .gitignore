@@ -1,0 +1,10 @@
+.DS_Store
+.Trashes
+*.zip
+*.xcuserstate
+*.xcbkptlist
+xcuserdata
+project.xcworkspace
+*.dng
+*.heic
+iphoneApp/VideoLiveStreaming/Classes/streamingConfiguration.plist

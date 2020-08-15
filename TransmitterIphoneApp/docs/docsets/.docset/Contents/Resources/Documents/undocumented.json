@@ -1,0 +1,138 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/AppDelegate.swift",
+      "line": 16,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/DepthToGrayscaleConverter.swift",
+      "line": 47,
+      "symbol": "DepthToGrayscaleConverter.DepthRenderParam",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/DepthToGrayscaleConverter.swift",
+      "line": 48,
+      "symbol": "DepthToGrayscaleConverter.DepthRenderParam.offset",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/DepthToGrayscaleConverter.swift",
+      "line": 49,
+      "symbol": "DepthToGrayscaleConverter.DepthRenderParam.range",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/DepthToGrayscaleConverter.swift",
+      "line": 50,
+      "symbol": "DepthToGrayscaleConverter.DepthRenderParam.interleavedDepthCoding",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/DepthToGrayscaleConverter.swift",
+      "line": 53,
+      "symbol": "DepthToGrayscaleConverter.range",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/DepthToGrayscaleConverter.swift",
+      "line": 55,
+      "symbol": "DepthToGrayscaleConverter.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 11,
+      "symbol": "VideoMixer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 13,
+      "symbol": "VideoMixer.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 15,
+      "symbol": "VideoMixer.isPrepared",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 17,
+      "symbol": "VideoMixer.inputFormatDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 19,
+      "symbol": "VideoMixer.outputFormatDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 37,
+      "symbol": "VideoMixer.mixFactor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 39,
+      "symbol": "VideoMixer.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 70,
+      "symbol": "VideoMixer.prepare(with:outputRetainedBufferCountHint:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 102,
+      "symbol": "VideoMixer.MixerParameters",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 103,
+      "symbol": "VideoMixer.MixerParameters.mixFactor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 106,
+      "symbol": "VideoMixer.mix(videoPixelBuffer:depthPixelBuffer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift",
+      "line": 165,
+      "symbol": "VideoMixer.makeTextureFromCVPixelBuffer(pixelBuffer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming"
+}

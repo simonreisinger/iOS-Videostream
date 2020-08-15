@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (78% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DepthToGrayscaleConverter.html">DepthToGrayscaleConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DepthToGrayscaleConverter/DepthRenderParam.html">– DepthRenderParam</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SettingsViewController.html">SettingsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoMixer.html">VideoMixer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoMixer/MixerParameters.html">– MixerParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ViewController.html">ViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:22VideoLiveStreamingDemo24allocateOutputBufferPoolSo07CVPixelgH0CSg06outputgH0_So12CGColorSpaceCSg0j5ColorL0So19CMFormatDescriptionCSg0j6FormatO0tAL4with_Si0j8RetainedG9CountHinttF">allocateOutputBufferPool(with:outputRetainedBufferCountHint:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/FilterRenderer.html">FilterRenderer</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='iosdepthrecording' class='heading'>iOSDepthRecording</h1>
+
+<!--[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://mit-license.org)-->
+
+<p><a href="https://developer.apple.com/resources/"><img src="http://img.shields.io/badge/platform-ios-lightgrey.svg" alt="Platform"></a>
+<a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift-3.1-orange.svg" alt="Language"></a>
+<a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift-4-orange.svg" alt="Language"></a></p>
+
+<p>This project was implemented during a Practicum for the Research Divisions <a href="https://www.ims.tuwien.ac.at/">Interactive Media Systems</a>,  (<a href="www.tuwien.ac.at">TU Wien</a>) </p>
+
+<p>An iOS App for  iPhones with Dual Cameras which streams Video and Depth Data to a server using Apple HLS format. </p>
+
+<p>Most of the action happens in Classes/ViewController.swift. First, set your endpoint (and the other settings) in Classes/streamingConfiguration.plist. This can be a PHP file on your publicly-visible web host. </p>
+
+<p>Your PHP file can look like this:</p>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<span class="nv">$putdata</span> <span class="o">=</span> <span class="nb">fopen</span><span class="p">(</span><span class="s2">"php://input"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">);</span>
+<span class="nv">$fp</span> <span class="o">=</span> <span class="nb">fopen</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'filename'</span><span class="p">],</span> <span class="s2">"w"</span><span class="p">);</span>
+<span class="k">while</span> <span class="p">(</span><span class="nv">$data</span> <span class="o">=</span> <span class="nb">fread</span><span class="p">(</span><span class="nv">$putdata</span><span class="p">,</span> <span class="mi">1024</span><span class="p">))</span>
+  <span class="nb">fwrite</span><span class="p">(</span><span class="nv">$fp</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
+<span class="nb">fclose</span><span class="p">(</span><span class="nv">$fp</span><span class="p">);</span>
+<span class="nb">fclose</span><span class="p">(</span><span class="nv">$putdata</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre>
+<h2 id='resources' class='heading'>Resources:</h2>
+
+<ul>
+<li><a href="https://developer.apple.com/library/content/samplecode/AVCamPhotoFilter">Depth data</a></li>
+<li><a href="https://github.com/MerchV/VideoLiveStreaming">Rudimentary Video Streaming using Apple HLS format</a></li>
+<li>Documentaion created with <a href="https://github.com/realm/jazzy">jazzy</a></li>
+<li><a href="https://youtu.be/UFOiCESv0s4">iPhone wirless debugging</a></li>
+</ul>
+<h3 id='the-xcode-project-includes-already-built' class='heading'>The Xcode project includes (already built)</h3>
+
+<ul>
+<li><a href="https://github.com/OpenWatch/FFmpegWrapper">FFmpegWrapper</a></li>
+<li><a href="https://github.com/chrisballinger/FFmpeg-iOS">FFmpeg-iOS</a></li>
+</ul>
+<h2 id='requierements' class='heading'>Requierements</h2>
+
+<ul>
+<li>iPhone with Dual Cameras</li>
+<li>iOS 11.x+</li>
+<li>Xcode 11+</li>
+<li>Swift 4.0+</li>
+</ul>
+<h2 id='authors' class='heading'>Authors</h2>
+
+<ul>
+<li>Michael Pointner</li>
+<li>Simon Reisinger</li>
+</ul>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-06-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ViewController" class="dashAnchor"></a>
+    <a title="ViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (78% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DepthToGrayscaleConverter.html">DepthToGrayscaleConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DepthToGrayscaleConverter/DepthRenderParam.html">– DepthRenderParam</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SettingsViewController.html">SettingsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoMixer.html">VideoMixer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoMixer/MixerParameters.html">– MixerParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewController.html">ViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:22VideoLiveStreamingDemo24allocateOutputBufferPoolSo07CVPixelgH0CSg06outputgH0_So12CGColorSpaceCSg0j5ColorL0So19CMFormatDescriptionCSg0j6FormatO0tAL4with_Si0j8RetainedG9CountHinttF">allocateOutputBufferPool(with:outputRetainedBufferCountHint:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/FilterRenderer.html">FilterRenderer</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt">AVCaptureVideoDataOutputSampleBufferDelegate</span><span class="p">,</span> <span class="kt">AVCaptureDepthDataOutputDelegate</span><span class="p">,</span> <span class="kt">AVCaptureDataOutputSynchronizerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Controlls a storyboard. Can Stream Depth and Video Data to a Webserver</p>
+<div class="aside aside-authors">
+    <p class="aside-title">Authors</p>
+    Michael Pointner, Simon Reisinger, mvisoiu
+
+</div>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Based on <a href="https://github.com/MerchV/VideoLiveStreaming">VideoLiveStreaming</a> from mvisoiu
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC17EndpointUrlStringSSvp"></a>
+                    <a name="//apple_ref/swift/Property/EndpointUrlString" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC17EndpointUrlStringSSvp">EndpointUrlString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>getter and setter Methode for endpointUrlString</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">EndpointUrlString</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC0C9FrequencySdvp"></a>
+                    <a name="//apple_ref/swift/Property/StreamingFrequency" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC0C9FrequencySdvp">StreamingFrequency</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides setter and getter for the <strong>streamingFrequency</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">StreamingFrequency</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC14SelectedOptionSivp"></a>
+                    <a name="//apple_ref/swift/Property/SelectedOption" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC14SelectedOptionSivp">SelectedOption</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides setter and getter for the <strong>filter</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">SelectedOption</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC11StreamWidthSivp"></a>
+                    <a name="//apple_ref/swift/Property/StreamWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC11StreamWidthSivp">StreamWidth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides setter and getter for the <strong>streamWidth</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">StreamWidth</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC12StreamHeightSivp"></a>
+                    <a name="//apple_ref/swift/Property/StreamHeight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC12StreamHeightSivp">StreamHeight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides setter and getter for the <strong>streamHeight</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">StreamHeight</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(py)preview"></a>
+                    <a name="//apple_ref/swift/Property/preview" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(py)preview">preview</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Previews the output data from the RGB camera on the screen</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">var</span> <span class="nv">preview</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Update%20Orientaion%20(when%20device%20does%20change%20the%20orientation)"></a>
+                <a name="//apple_ref/swift/Section/Update Orientaion (when device does change the orientation)" class="dashAnchor"></a>
+                <a href="#/Update%20Orientaion%20(when%20device%20does%20change%20the%20orientation)">
+                  <h3 class="section-name">Update Orientaion (when device does change the orientation)</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC17updateOrientationyyF"></a>
+                    <a name="//apple_ref/swift/Method/updateOrientation()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC17updateOrientationyyF">updateOrientation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the screen/preview settings when the device changes orientation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateOrientation</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC24updatePreviewOrientationyyF"></a>
+                    <a name="//apple_ref/swift/Method/updatePreviewOrientation()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC24updatePreviewOrientationyyF">updatePreviewOrientation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the preview orientation when the device changes orientation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updatePreviewOrientation</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called after the controller&#39;s view is loaded into memory.
+This method is called after the view controller has loaded its view hierarchy into memory. This method is called regardless of whether the view hierarchy was loaded from a nib file or created programmatically in the loadView() method. You usually override this method to perform additional initialization on views that were loaded from nib files.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(py)shouldAutorotate"></a>
+                    <a name="//apple_ref/swift/Property/shouldAutorotate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(py)shouldAutorotate">shouldAutorotate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables Autorotate for this Storyboard</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">shouldAutorotate</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)takePhotoWithSender:"></a>
+                    <a name="//apple_ref/swift/Method/takePhoto(sender:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)takePhotoWithSender:">takePhoto(sender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>takes photo and streams it to the server</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">takePhoto</span><span class="p">(</span><span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)startstopstreamingWithSender:"></a>
+                    <a name="//apple_ref/swift/Method/startstopstreaming(sender:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)startstopstreamingWithSender:">startstopstreaming(sender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts/Stops the streaming of the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">startstopstreaming</span><span class="p">(</span><span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)openSettingsButtonPressedWithSender:"></a>
+                    <a name="//apple_ref/swift/Method/openSettingsButtonPressed(sender:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)openSettingsButtonPressedWithSender:">openSettingsButtonPressed(sender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Opens Settings Story board if there is no streaming</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">openSettingsButtonPressed</span><span class="p">(</span><span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC14startRecordingyyF"></a>
+                    <a name="//apple_ref/swift/Method/startRecording()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC14startRecordingyyF">startRecording()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts streaming <strong>RGB</strong> / <strong>Deapth</strong> - Data to the specified URL</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startRecording</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC13stopRecordingyyF"></a>
+                    <a name="//apple_ref/swift/Method/stopRecording()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC13stopRecordingyyF">stopRecording()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stopps streaming <strong>RBG</strong> / <strong>Deapth</strong> - Data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopRecording</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Synchronized%20Data%20Output%20Delegate"></a>
+                <a name="//apple_ref/swift/Section/Synchronized Data Output Delegate" class="dashAnchor"></a>
+                <a href="#/Synchronized%20Data%20Output%20Delegate">
+                  <h3 class="section-name">Synchronized Data Output Delegate</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)dataOutputSynchronizer:didOutputSynchronizedDataCollection:"></a>
+                    <a name="//apple_ref/swift/Method/dataOutputSynchronizer(_:didOutput:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)dataOutputSynchronizer:didOutputSynchronizedDataCollection:">dataOutputSynchronizer(_:didOutput:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides a collection of synchronized capture data to the delegate.
+Use the data collection&rsquo;s synchronizedData(for:) method (or equivalent subscript(_:) operator) to retrieve the captured data corresponding to each capture output.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">dataOutputSynchronizer</span><span class="p">(</span><span class="n">_</span> <span class="nv">synchronizer</span><span class="p">:</span> <span class="kt">AVCaptureDataOutputSynchronizer</span><span class="p">,</span> <span class="n">didOutput</span> <span class="nv">synchronizedDataCollection</span><span class="p">:</span> <span class="kt">AVCaptureSynchronizedDataCollection</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>synchronizer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The synchronizer object delivering synchronized data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>synchronizedDataCollection</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A collection of data samples, one for each capture output governed by the data output synchronizer for which capture data is ready.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Video%20Data%20Output%20Delegate"></a>
+                <a name="//apple_ref/swift/Section/Video Data Output Delegate" class="dashAnchor"></a>
+                <a href="#/Video%20Data%20Output%20Delegate">
+                  <h3 class="section-name">Video Data Output Delegate</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)captureOutput:didDropSampleBuffer:fromConnection:"></a>
+                    <a name="//apple_ref/swift/Method/captureOutput(_:didDrop:from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)captureOutput:didDropSampleBuffer:fromConnection:">captureOutput(_:didDrop:from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the delegate that a video frame was discarded.
+Delegates receive this message whenever a late video frame is dropped. This method is called once for each dropped frame. It is called on the dispatch queue specified by the output’s sampleBufferCallbackQueue property.
+The sampleBuffer will contain a kCMSampleBufferAttachmentKey_DroppedFrameReason attachment that details why the frame was dropped. The frame may be dropped because it was late (kCMSampleBufferDroppedFrameReason_FrameWasLate), typically caused by the client’s processing taking too long. It can also be dropped because the module providing frames is out of buffers (kCMSampleBufferDroppedFrameReason_OutOfBuffers). Frames can also be dropped due to a discontinuity (kCMSampleBufferDroppedFrameReason_Discontinuity), if the module providing sample buffers has experienced a discontinuity, and an unknown number of frames have been lost. This condition is typically caused by the system being too busy.
+Because this method is called on the same dispatch queue that is responsible for outputting video frames, it must be efficient to prevent further capture performance problems, such as additional dropped video frames.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">captureOutput</span><span class="p">(</span><span class="n">_</span> <span class="nv">captureOutput</span><span class="p">:</span> <span class="kt">AVCaptureOutput</span><span class="p">,</span> <span class="n">didDrop</span> <span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">,</span> <span class="n">from</span> <span class="nv">connection</span><span class="p">:</span> <span class="kt">AVCaptureConnection</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>captureOutput</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The capture output object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A CMSampleBuffer object containing information about the dropped frame, such as its format and presentation time.. This sample buffer contains none of the original video data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>connection</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The connection from which the video was received.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)captureOutput:didOutputSampleBuffer:fromConnection:"></a>
+                    <a name="//apple_ref/swift/Method/captureOutput(_:didOutput:from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)captureOutput:didOutputSampleBuffer:fromConnection:">captureOutput(_:didOutput:from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the delegate that a new video frame was written.
+Delegates receive this message whenever the output captures and outputs a new video frame, decoding or re-encoding it as specified by its videoSettings property. Delegates can use the provided video frame in conjunction with other APIs for further processing.
+This method is called on the dispatch queue specified by the output’s sampleBufferCallbackQueue property. It is called periodically, so it must be efficient to prevent capture performance problems, including dropped frames.
+If you need to reference the CMSampleBuffer object outside of the scope of this method, you must CFRetain it and then CFRelease it when you are finished with it.
+To maintain optimal performance, some sample buffers directly reference pools of memory that may need to be reused by the device system and other capture inputs. This is frequently the case for uncompressed device native capture where memory blocks are copied as little as possible. If multiple sample buffers reference such pools of memory for too long, inputs will no longer be able to copy new samples into memory and those samples will be dropped.
+If your application is causing samples to be dropped by retaining the provided CMSampleBuffer objects for too long, but it needs access to the sample data for a long period of time, consider copying the data into a new buffer and then releasing the sample buffer (if it was previously retained) so that the memory it references can be reused.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">captureOutput</span><span class="p">(</span><span class="n">_</span> <span class="nv">output</span><span class="p">:</span> <span class="kt">AVCaptureOutput</span><span class="p">,</span> <span class="n">didOutput</span> <span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">,</span> <span class="n">from</span> <span class="nv">connection</span><span class="p">:</span> <span class="kt">AVCaptureConnection</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>captureOutput</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The capture output object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A CMSampleBuffer object containing the video frame data and additional information about the frame, such as its format and presentation time.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>connection</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The connection from which the video was received.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Depth%20Data%20Output%20Delegate"></a>
+                <a name="//apple_ref/swift/Section/Depth Data Output Delegate" class="dashAnchor"></a>
+                <a href="#/Depth%20Data%20Output%20Delegate">
+                  <h3 class="section-name">Depth Data Output Delegate</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)depthDataOutput:didDropDepthData:timestamp:connection:reason:"></a>
+                    <a name="//apple_ref/swift/Method/depthDataOutput(_:didDrop:timestamp:connection:reason:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)depthDataOutput:didDropDepthData:timestamp:connection:reason:">depthDataOutput(_:didDrop:timestamp:connection:reason:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Informs the delegate that captured depth data was not processed.
+The capture output calls this method once for each dropped depth data whenever data is dropped. The object in the depthData parameter is an empty shell, containing no actual depth data backing pixel buffer
+The capture output calls this method on the dispatch queue specified by its delegateCallbackQueue property. Because this method executes on the same dispatch queue that outputs depth data, your implementation must be efficient to prevent further capture performance problems such as additional drops.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">depthDataOutput</span><span class="p">(</span><span class="n">_</span> <span class="nv">output</span><span class="p">:</span> <span class="kt">AVCaptureDepthDataOutput</span><span class="p">,</span> <span class="nv">didDrop</span><span class="p">:</span> <span class="kt">AVDepthData</span><span class="p">,</span> <span class="nv">timestamp</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">,</span> <span class="nv">connection</span><span class="p">:</span> <span class="kt">AVCaptureConnection</span><span class="p">,</span> <span class="nv">reason</span><span class="p">:</span> <span class="kt">AVCaptureOutput</span><span class="o">.</span><span class="kt">DataDroppedReason</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>output</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The depth data output providing data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>depthData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A depth data object containing information about the dropped data, such as its data type. Because this depth data was not captured or processed, its depthDataMap property is empty.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timestamp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time at which the data was captured.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>connection</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The capture connection through which the data was captured.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reason</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The reason depth data was dropped</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)depthDataOutput:didOutputDepthData:timestamp:connection:"></a>
+                    <a name="//apple_ref/swift/Method/depthDataOutput(_:didOutput:timestamp:connection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)depthDataOutput:didOutputDepthData:timestamp:connection:">depthDataOutput(_:didOutput:timestamp:connection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides newly captured depth data to the delegate.
+The depth data output calls this method whenever it captures and outputs a new depth data object. This method is called on the dispatch queue specified by the output&rsquo;s delegateCallbackQueue property, and can be called frequently. Your implementation must process the depth data quickly in order to prevent dropped depth data.
+To maintain optimal performance, the capture pipeline may allocate AVDepthData pixel buffer maps from a finite memory pool. If you hold onto any AVDepthData objects for too long, capture inputs cannot copy new depth data into memory, resulting in dropped depth data. If your application is causing depth data drops by holding on to provided depth data objects for too long, consider copying the pixel buffer map data into a new pixel buffer so that the AVDepthData backing memory can be reused more quickly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">depthDataOutput</span><span class="p">(</span><span class="n">_</span> <span class="nv">depthDataOutput</span><span class="p">:</span> <span class="kt">AVCaptureDepthDataOutput</span><span class="p">,</span> <span class="n">didOutput</span> <span class="nv">depthData</span><span class="p">:</span> <span class="kt">AVDepthData</span><span class="p">,</span> <span class="nv">timestamp</span><span class="p">:</span> <span class="kt">CMTime</span><span class="p">,</span> <span class="nv">connection</span><span class="p">:</span> <span class="kt">AVCaptureConnection</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>output</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The depth data output providing data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>depthData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A depth data object containing the captured per-pixel depth data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timestamp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time at which the data was captured.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>connection</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The capture connection through which the data was captured.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/processing%20the%20captured%20data"></a>
+                <a name="//apple_ref/swift/Section/processing the captured data" class="dashAnchor"></a>
+                <a href="#/processing%20the%20captured%20data">
+                  <h3 class="section-name">processing the captured data</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC07processA0ySo14CMSampleBufferC06sampleI0_tF"></a>
+                    <a name="//apple_ref/swift/Method/processVideo(sampleBuffer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC07processA0ySo14CMSampleBufferC06sampleI0_tF">processVideo(sampleBuffer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Processes the captured Video Data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">processVideo</span><span class="p">(</span><span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Captured sampleBuffer, which will be processed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC17updateStatusLableySS7newText_tF"></a>
+                    <a name="//apple_ref/swift/Method/updateStatusLable(newText:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC17updateStatusLableySS7newText_tF">updateStatusLable(newText:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the Status Lable</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Simon Reisinger
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateStatusLable</span><span class="p">(</span><span class="nv">newText</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newText</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new Text, which will be displayed by the label</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC16errorStatusLableySS7newText_tF"></a>
+                    <a name="//apple_ref/swift/Method/errorStatusLable(newText:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC16errorStatusLableySS7newText_tF">errorStatusLable(newText:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the Error Label</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Simon Reisinger
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">errorStatusLable</span><span class="p">(</span><span class="nv">newText</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newText</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new Text, which will be displayed by the label</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC12processDepthySo11AVDepthDataC05depthJ0_tF"></a>
+                    <a name="//apple_ref/swift/Method/processDepth(depthData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC12processDepthySo11AVDepthDataC05depthJ0_tF">processDepth(depthData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Processes the captured Depth Data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">processDepth</span><span class="p">(</span><span class="nv">depthData</span><span class="p">:</span> <span class="kt">AVDepthData</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>depthData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Captured depth data, which will be processed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/timer"></a>
+                <a name="//apple_ref/swift/Section/timer" class="dashAnchor"></a>
+                <a href="#/timer">
+                  <h3 class="section-name">timer</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)timerWithMyTimer:"></a>
+                    <a name="//apple_ref/swift/Method/timer(myTimer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)timerWithMyTimer:">timer(myTimer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Brodcasts the collected <strong>RGB</strong> / <strong>Depth</strong> Videodata to the server when triggered</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Based on [VideoLiveStreaming]{<a href="https://github.com/MerchV/VideoLiveStreaming">https://github.com/MerchV/VideoLiveStreaming</a>}
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">timer</span><span class="p">(</span><span class="nv">myTimer</span><span class="p">:</span> <span class="kt">Timer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>myTimer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>current time</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC13showFocusareaySC7CGPointV15didFocusAtPoint_tF"></a>
+                    <a name="//apple_ref/swift/Method/showFocusarea(didFocusAtPoint:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC13showFocusareaySC7CGPointV15didFocusAtPoint_tF">showFocusarea(didFocusAtPoint:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays a circle where the focus point was set. and removes it after some time</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <a href="https://github.com/Awalz/SwiftyCam">Andrew Walz</a>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showFocusarea</span><span class="p">(</span><span class="n">didFocusAtPoint</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>didFocusAtPoint</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Position where focus was set</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)prepareForSegue:sender:"></a>
+                    <a name="//apple_ref/swift/Method/prepare(for:sender:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)prepareForSegue:sender:">prepare(for:sender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the view controller that a segue is about to be performed.
+The default implementation of this method does nothing. Subclasses override this method and use it to configure the new view controller prior to it being displayed. The segue object contains information about the transition, including references to both view controllers that are involved.
+Because segues can be triggered from multiple sources, you can use the information in the segue and sender parameters to disambiguate between different logical paths in your app. For example, if the segue originated from a table view, the sender parameter would identify the table view cell that the user tapped. You could then use that information to set the data on the destination view controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">prepare</span><span class="p">(</span><span class="k">for</span> <span class="nv">segue</span><span class="p">:</span> <span class="kt">UIStoryboardSegue</span><span class="p">,</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>segue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The segue object containing information about the view controllers involved in the segue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Observer"></a>
+                <a name="//apple_ref/swift/Section/Observer" class="dashAnchor"></a>
+                <a href="#/Observer">
+                  <h3 class="section-name">Observer</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)rotated"></a>
+                    <a name="//apple_ref/swift/Method/rotated()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)rotated">rotated()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Triggers when the iPhone changes orientation. Changes orientation of the screen and the video</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">rotated</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)didEnterBackgroundWithNotification:"></a>
+                    <a name="//apple_ref/swift/Method/didEnterBackground(notification:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)didEnterBackgroundWithNotification:">didEnterBackground(notification:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Triggeres when the app enters background and stops recording</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <a href="https://www.apple.com/">Apple</a>
+
+</div>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Based on a methode of <a href="com.example.apple-samplecode.AVCamPhotoFilterN5MBV7GWSJ">AVCamPhotoFilter</a> from <a href="https://www.apple.com/">Apple</a>
+
+</div>
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    check if indexes should be reset ect.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">didEnterBackground</span><span class="p">(</span><span class="nv">notification</span><span class="p">:</span> <span class="kt">NSNotification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)thermalStateChangedWithNotification:"></a>
+                    <a name="//apple_ref/swift/Method/thermalStateChanged(notification:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VideoLiveStreamingDemo@objc(cs)ViewController(im)thermalStateChangedWithNotification:">thermalStateChanged(notification:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Triggeres when the thermel status changes an shows a notification</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <a href="https://www.apple.com/">Apple</a>
+
+</div>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Based on a methode of <a href="com.example.apple-samplecode.AVCamPhotoFilterN5MBV7GWSJ">AVCamPhotoFilter</a> from <a href="https://www.apple.com/">Apple</a>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">thermalStateChanged</span><span class="p">(</span><span class="nv">notification</span><span class="p">:</span> <span class="kt">NSNotification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22VideoLiveStreamingDemo14ViewControllerC16showThermalStateySo11ProcessInfoC0hI0O5state_tF"></a>
+                    <a name="//apple_ref/swift/Method/showThermalState(state:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22VideoLiveStreamingDemo14ViewControllerC16showThermalStateySo11ProcessInfoC0hI0O5state_tF">showThermalState(state:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shows an alert displaying the thermal status</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <a href="https://www.apple.com/">Apple</a>
+
+</div>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Based on a methode of <a href="com.example.apple-samplecode.AVCamPhotoFilterN5MBV7GWSJ">AVCamPhotoFilter</a> from <a href="https://www.apple.com/">Apple</a>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showThermalState</span><span class="p">(</span><span class="nv">state</span><span class="p">:</span> <span class="kt">ProcessInfo</span><span class="o">.</span><span class="kt">ThermalState</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-06-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

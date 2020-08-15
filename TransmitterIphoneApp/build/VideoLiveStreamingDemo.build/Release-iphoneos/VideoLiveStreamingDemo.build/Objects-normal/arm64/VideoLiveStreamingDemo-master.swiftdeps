@@ -1,0 +1,10 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "d42d063b46d16587b296823a9c98224a"
+build_time: [1529709766, 835102000]
+inputs:
+  "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/SettingsViewController.swift": [9223372036, 854775807]
+  "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/VideoMixer.swift": [9223372036, 854775807]
+  "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/ViewController.swift": [9223372036, 854775807]
+  "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/FilterRenderer.swift": [9223372036, 854775807]
+  "/Users/simonreisinger/Documents/TUWien/Semester8/pr/IosDepthRecording/iphoneApp/VideoLiveStreaming/Classes/DepthToGrayscaleConverter.swift": [9223372036, 854775807]
