@@ -79,7 +79,7 @@ Auf dem Hauptbildschirm der App stehen 4 Buttons zur Verfügung:
 
 Weiteres wird links oben der Streaming-Status und diverse Fehler bei der Übertragung angezeigt.
 
-<img src="screenshots/savedImage.png" alt = "AppScreenshot" width="200"/> <img src="screenshots/savedImage2.png" alt = "AppScreenshot2" width="200"/>
+<img src="screenshots/screenshot.PNG" alt = "AppScreenshot" width="200"/> <img src="screenshots/screenshot2.PNG" alt = "AppScreenshot2" width="200"/>
 <br /><!--TODO delte this line-->
 <br /><!--TODO delte this line-->
 Einstellungen:
