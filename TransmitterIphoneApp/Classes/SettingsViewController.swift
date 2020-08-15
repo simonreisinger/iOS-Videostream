@@ -478,6 +478,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIPickerVie
      - Returns: The number of rows for the component.
      */
     internal func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        pickerView.setValue(UIColor.black, forKeyPath: "textColor")
         return self.filterPossibilities.count
     }
     
@@ -490,6 +491,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIPickerVie
      - Returns: The string to use as the title of the indicated component row.
      */
     internal func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int ) -> String? {
+        pickerView.setValue(UIColor.black, forKeyPath: "textColor")
         return self.filterPossibilities[row]
     }
     
