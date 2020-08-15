@@ -4,7 +4,6 @@
 [![Language](https://img.shields.io/badge/swift-3.1-orange.svg)](https://developer.apple.com/swift)
 [![Language](https://img.shields.io/badge/swift-4-orange.svg)](https://developer.apple.com/swift)
 
-This project was implemented during a Practicum for the Research Divisions [Interactive Media Systems](https://www.ims.tuwien.ac.at/),  ([TU Wien] (www.tuwien.ac.at) ) 
 
 It streams color/depth data video/photo from an iPhone to a server where it is prosessed and replayed with a small delay
 
@@ -53,6 +52,9 @@ It streams color/depth data video/photo from an iPhone to a server where it is p
 * [XCODE](https://developer.apple.com/xcode) Version 9.4.1
 * iPhone 7 plus  (iOS 11.4)
 * [Mac OS](https://www.apple.com/macos) 10.13.x
+
+## Acknowledgment
+This project was implemented during a Practicum for the Research Divisions [Interactive Media Systems](https://www.ims.tuwien.ac.at/), ([TU Wien] (www.tuwien.ac.at)) 
 
 ## Authors
 * Michael Pointner
