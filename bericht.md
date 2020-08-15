@@ -111,7 +111,7 @@ Im folgenden Demo Bild sind folgende Layer sichtbar (von links nach rechts):
 4) aus den gestreamten Disparitätsdaten erzeugtes geglättetes Binärbild
 5) Kombination aus gestreamten RGB-Video und Hintergrundvideo anhand des Binärfilters
 
-![DemoImage](images/demo.jpg)
+![DemoImage](screenshots/demo.jpg)
 
 ## Ausblick
 Da es sich bei der Informationstechnologie um ein sich ständig weiterentwickelndes Feld handelt kann davon ausgegangen werden, dass es in Zukunft möglich sein wird, durch den Fortschritt im Bereich der Hardware höher auflösende RGBD-Videos in besserer Qualität zu übertragen.
