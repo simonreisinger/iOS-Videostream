@@ -108,17 +108,20 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         // Create Title
         self.headlineLabel = UILabel(frame: CGRect(x: boarder, y: boarder, width: screenWidth-2*boarder, height: 40))
         self.headlineLabel.text = "Settings"
+        self.headlineLabel.textColor = .black
         self.headlineLabel.font = UIFont(name: self.headlineLabel.font.fontName, size: 30)
         self.view.addSubview(self.headlineLabel)
         
         // Create Lable
         self.endpointUrlStringLabel = UILabel(frame: CGRect(x: boarder, y: 70, width: screenWidth-2*boarder, height: 25))
         self.endpointUrlStringLabel.text = "Endpoint Url:"
+        self.endpointUrlStringLabel.textColor = .black
         self.view.addSubview(endpointUrlStringLabel)
         
         // Create Textfield
         // TODO underline of the input window
         self.endpointUrlStringTextField = UITextField(frame: CGRect(x: boarder, y: 95, width: screenWidth-2*boarder, height: 25))
+        self.endpointUrlStringTextField.textColor = .black
         self.endpointUrlStringTextField.text = endpointUrlString
         self.endpointUrlStringTextField.delegate = self
         let borderURL = CALayer()
@@ -140,6 +143,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         
         // Create Textfield
         self.streamWidthTextField = UITextField(frame: CGRect(x: boarder, y: 160, width: streamSizeWidth, height: 25))
+        self.streamWidthTextField.textColor = .black
         self.streamWidthTextField.text = String(self.streamWidth)
         self.streamWidthTextField.delegate = self
         
@@ -160,6 +164,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         
         // Create Height Textfield
         self.streamHeightTextField = UITextField(frame: CGRect(x: boarder + screenWidth/2, y: 160, width: streamSizeWidth, height: 25))
+        self.streamHeightTextField.textColor = .black
         self.streamHeightTextField.text = String(self.streamHeight)
         self.streamHeightTextField.delegate = self
         
@@ -176,6 +181,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         // Create Filter Lable
         self.filteredLabel = UILabel(frame: CGRect(x: boarder, y: 195, width: screenWidth-2*boarder, height: 25))
         self.filteredLabel.text = "Filter:"
+        self.filteredLabel.textColor = .black
         self.view.addSubview(filteredLabel)
         
         // Data Picker
@@ -188,11 +194,13 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         // Create streamingFrequency Lable
         self.streamingFrequencyLabel = UILabel(frame: CGRect(x: boarder, y: 300, width: screenWidth-2*boarder, height: 25))
         self.streamingFrequencyLabel.text = "Chunk length (in sec):"
+        self.streamingFrequencyLabel.textColor = .black
         self.view.addSubview(streamingFrequencyLabel)
         
         // streamingFrequencyTextField
         self.streamingFrequencyTextField = UITextField(frame: CGRect(x: boarder, y: 330, width: screenWidth-2*boarder, height: 25))
         self.streamingFrequencyTextField.text = String(self.StreamingFrequency)
+        self.streamingFrequencyTextField.textColor = .black
         self.streamingFrequencyTextField.delegate = self
         self.view.addSubview(streamingFrequencyTextField)
         
